@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>model</title>
+  <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="../../docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- alert -->
+    <div class="alert alert-danger alert-dismissable" role="alert">
+      <button class="close" data-dismiss="alert">&times;</button>
+      <strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, maxime dicta sed error nobis
+        possimus quas neque eum delectus quod itaque expedita est quaerat impedit adipisci laudantium enim quia fuga!</strong>
+      <a href="#" class="alert-link">a链接</a>
+    </div><!-- /alert -->
+    <!-- dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-default" data-toggle="dropdown">toggle <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-header">top</li>
+        <li><a href="">11223发</a></li>
+        <li><a href="">11223发</a></li>
+        <li class="disabled"><a href="">11223发</a></li>
+        <li class="divider"></li>
+        <li class="dropdown-header">bottom</li>
+        <li><a href="">11223发</a></li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-primary">toggle2</button>
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="">12312434rwerew</a></li>
+        <li><a href="">12312434rwerew</a></li>
+        <li><a href="">12312434rwerew</a></li>
+        <li><a href="">12312434rwerew</a></li>
+      </ul>
+    </div>
+    <!-- dropdown toggleBtn 与 dropdown-menu 分离写法 -->
+    <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-target="#dropdown">toggle3</button>
+    <div class="dropdown" id="dropdown">
+      <ul class="dropdown-menu">
+        <li><a href="">fadfds</a></li>
+        <li><a href="">fadfds</a></li>
+        <li><a href="">fadfds</a></li>
+        <li><a href="">fadfds</a></li>
+      </ul>
+    </div><!-- /dropdown -->
+
+    <!-- /dropdown -->
+    <!-- input-group -->
+    <div class="input-group">
+      <span class="input-group-addon">@</span>
+      <input type="text" class="form-control" placeholder="userName">
+    </div>
+    <!-- input-group btn -->
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-default">Go</button>
+      </span>
+    </div>
+    <!-- input-group checkbox -->
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox">
+      </span>
+      <input type="text" class="form-control">
+    </div>
+    <!-- input-group dropdown -->
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+          Go<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="">ddddd</a></li>
+          <li><a href="">ddddd</a></li>
+          <li><a href="">ddddd</a></li>
+          <li><a href="">ddddd</a></li>
+        </ul>
+      </span>
+      <input type="text" class="form-control">
+    </div>
+    <!-- input-group dropdown 分裂式 -->
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-primary">
+          Go2
+        </button>
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="">dsflsdfjk</a></li>
+          <li><a href="">dsflsdfjk</a></li>
+          <li><a href="">dsflsdfjk</a></li>
+          <li><a href="">dsflsdfjk</a></li>
+        </ul>
+      </span>
+      <input type="text" class="form-control">
+    </div>
+    <!-- input-group btn-multiple -->
+    <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-default">i</button>
+        <button class="btn btn-danger">12</button>
+      </span>
+      <input type="text" class="form-control">
+    </div>
+  </div>
+</body>
+
+</html>

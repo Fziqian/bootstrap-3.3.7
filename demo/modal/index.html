@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>modal</title>
+  <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+  <script src="../../docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">显示模态框</button>
+  </div>
+  <!-- fade：（删除即禁用动画效果） -->
+  <div class="modal fade" tabindex="-1" id="demo-modal">
+    <!-- modal-lg/sm -->
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal"><span>&times;</span></button>
+          <h4 class="modal-title">title</h4>
+        </div>
+        <div class="modal-body">
+          <!-- grid -->
+          <div class="row">
+            <div class="col-sm-6">122</div>
+            <div class="col-sm-6">dsfsf</div>
+          </div>
+          <p class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio ullam dicta corporis
+            necessitatibus esse eum! Cum ipsam, vitae obcaecati praesentium veritatis molestias aspernatur sint,
+            architecto dolores labore ab accusamus.</p>
+        </div>
+        <div class="modal-footer"><!-- footer: text-align:right -->
+          <button class="btn btn-default" data-dismiss="modal">close</button>
+          <button class="btn btn-primary" id="submit">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
