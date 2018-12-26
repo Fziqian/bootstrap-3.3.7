@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tooltip</title>
+  <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+  <script src="../../docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">tooltips</h3>
+      </div>
+      <div class="panel-body">
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="top">top</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="left">left</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="right" title="right">right</button>
+        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="bottom">bottom</button>
+        <!-- options -->
+        <button class="btn btn-info" data-toggle="tooltip" title="options">options</button>
+        <!-- via js -->
+        <button class="btn btn-danger" id="btn" title="via js">via js</button>
+        <!-- events -->
+        <button class="btn btn-warning" id="btn2" data-toggle="tooltip" title="events">events</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

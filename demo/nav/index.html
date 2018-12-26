@@ -8,16 +8,25 @@
     <link rel="stylesheet" href="../../dist/css/bootstrap.css">
     <script src="../../docs/assets/js/vendor/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
   <div class="container">
     <!-- nav-tabs -->
-    <ul class="nav nav-tabs">
-      <li class="active"><a href="">123</a></li>
-      <li><a href="">dsf</a></li>
-      <li><a href="">sdf</a></li>
-      <li class="disabled"><a href="">savf</a></li>
+    <ul class="nav nav-tabs" id="myNav">
+      <li class="active"><a href="#panel1">123</a></li>
+      <li><a href="" data-target="#panel2">dsf</a></li>
+      <li><a href="#panel3">sdf</a></li>
+      <li class="disabled"><a href="#panel4">savf</a></li>
     </ul>
+    <!-- tab panels -->
+    <div class="tab-content">
+      <div id="panel1" class="fade in tab-pane active">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, magni fugit sapiente aut tempora in amet exercitationem necessitatibus ipsam assumenda quibusdam eveniet odit molestiae animi commodi eum molestias mollitia provident?</div>
+      <div id="panel2" class="fade tab-pane">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nemo eos enim incidunt deleniti ullam repellendus ea nulla veniam architecto sunt asperiores quam dignissimos ipsum labore autem ut, quibusdam non!</div>
+      <div id="panel3" class="fade tab-pane">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum rem cupiditate, reprehenderit porro accusantium rerum maxime earum. Aut corrupti ipsa eius, architecto sint quidem sunt dolorem ullam, dolores quo a!</div>
+      <div id="panel4" class="fade tab-pane">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea libero cum ipsum quo, officiis odio assumenda deserunt tenetur voluptatibus velit obcaecati sunt. Laboriosam, dolorem laudantium architecto nisi voluptatibus soluta ea!</div>
+    </div>
+
     <!-- nav-pills -->
     <ul class="nav nav-pills">
       <li class="active"><a href="">sfksdfl</a></li>

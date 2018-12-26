@@ -24,7 +24,7 @@
     </div><!-- /alert -->
     <!-- dropdown -->
     <div class="dropdown">
-      <button class="btn btn-default" data-toggle="dropdown">toggle <span class="caret"></span></button>
+      <button id="toggle" class="btn btn-default" data-toggle="dropdown">toggle <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li class="dropdown-header">top</li>
         <li><a href="">11223发</a></li>
@@ -54,7 +54,19 @@
         <li><a href="">fadfds</a></li>
         <li><a href="">fadfds</a></li>
       </ul>
-    </div><!-- /dropdown -->
+    </div>
+    <!-- dropdown 通过js调用写法 -->
+    <button id="toggle4" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-target="#demo-dropdown">toggle4</button>
+    <button id="toggle5">toggle via js</button>
+    <div class="dropdown" id="demo-dropdown">
+      <ul class="dropdown-menu">
+        <li><a href="">aaaa</a></li>
+        <li><a href="">aaaa</a></li>
+        <li><a href="">aaaa</a></li>
+        <li><a href="">aaaa</a></li>
+      </ul>
+    </div>
+    <!-- /dropdown -->
 
     <!-- /dropdown -->
     <!-- input-group -->
