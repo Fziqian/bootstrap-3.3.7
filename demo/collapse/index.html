@@ -1,21 +1,116 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>collapse</title>
+  <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+  <script src="../../docs/assets/js/vendor/jquery.min.js"></script>
+  <script src="../../dist/js/bootstrap.js"></script>
+  <script src="main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <h3 class="panel-title">collapse</h3>
+  <div class="container">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">collapse</h3>
+      </div>
+      <div class="panel-body">
+        <!-- a link -->
+        <a href="#collapse1" data-toggle="collapse" class="btn btn-primary">a link</a>
+        <!-- button -->
+        <button class="btn btn-success" data-toggle="collapse" data-target="#collapse2">button</button>
+        <!-- collapse1 -->
+        <div class="collapse in" id="collapse1">
+          <div class="well">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, excepturi. Perspiciatis expedita nihil aperiam
+            repudiandae ipsam, earum consequuntur incidunt aut sequi ut magnam deleniti itaque. Natus alias rerum
+            consequatur aut?
           </div>
-          <div class="panel-body">
-            
+        </div>
+        <!-- collapse2 -->
+        <div class="collapse" id="collapse2">
+          <div class="well">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet enim architecto qui, eius similique rem at
+            error, rerum laboriosam, eligendi obcaecati nihil nemo ipsam vitae eaque minus expedita! Modi, dolorem.
+          </div>
+        </div>
+        <h2>panel-group accordion</h2>
+        <!-- panel-group accordion -->
+        <div class="panel-group" id="accordion">
+          <!-- panel1 -->
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <a href="#panel1" data-toggle="collapse" data-parent="#accordion">panel1</a>
+              </h3>
+            </div>
+            <div class="panel-collapse collapse in" id="panel1">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. At perferendis modi molestias in! Voluptates
+                modi, dolorum nam odit pariatur laudantium debitis enim distinctio necessitatibus nesciunt esse nemo
+                atque, blanditiis ipsa?
+              </div>
+            </div>
+          </div>
+          <!-- panel2 -->
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <a href="#panel2" data-toggle="collapse" data-parent="#accordion">panel2</a>
+              </h3>
+            </div>
+            <div class="panel-collapse collapse" id="panel2">
+              <div class="panel-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsum cumque asperiores dolorum eum
+                voluptatum veniam rem dolorem quae commodi? Veritatis, culpa dolorem aliquam labore cum et veniam ea
+                ipsa?
+              </div>
+            </div>
+          </div>
+          <!-- panel3 list-group -->
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <a href="#panel3" data-toggle="collapse" data-parent="#accordion">panel3 list-group</a>
+              </h3>
+            </div>
+            <div class="collapse panel-collapse" id="panel3">
+              <div class="list-group">
+                <div class="list-group-item list-group-item-text">
+                  asdfsf
+                </div>
+                <div class="list-group-item list-group-item-danger">
+                  dsfsdf
+                </div>
+                <div class="list-group-item list-group-item-success">
+                  sdfsdf
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- via js -->
+          <h2>via js</h2>
+          <button class="btn btn-primary" id="btn-toggle">toggle</button>
+          <button class="btn btn-info" id="btn-show">show</button>
+          <button class="btn btn-danger" id="btn-hide">hide</button>
+          <div class="collapse" id="collapseJS">
+            <div class="well well-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus recusandae error, consectetur
+              quas atque soluta tenetur doloribus ea officia maiores iusto. Ducimus nisi blanditiis modi quas
+              voluptates quaerat totam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit facilis magnam dolor et fuga
+              reiciendis accusamus soluta, animi alias quisquam perspiciatis voluptas quod tempora vel sed nam,
+              quibusdam aliquid!
+            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 </body>
+
 </html>

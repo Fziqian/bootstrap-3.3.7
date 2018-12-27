@@ -17,7 +17,9 @@
     <button class="btn btn-primary" data-toggle="modal" data-target="#demo-modal">显示模态框</button>
   </div>
   <!-- fade：（删除即禁用动画效果） -->
-  <div class="modal fade" tabindex="-1" id="demo-modal">
+  <!-- data-backdrop="static" 表示取消点击背景关闭模态框 -->
+  <!-- data-keyboard="false" 表示关闭esc键hide modal的功能 -->
+  <div class="modal fade" tabindex="-1" id="demo-modal" data-backdrop="static">
     <!-- modal-lg/sm -->
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
